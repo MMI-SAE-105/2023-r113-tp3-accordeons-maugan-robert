@@ -18,11 +18,15 @@
       </section>
       <section x-data="{ open: false }">
         <button @click="open = ! open">bouton 2</button>
+        <span x-show="open" x-transition>
         <p>Corporis velit tempore excepturi dignissimos quasi laudantium? Neque cumque unde at est natus quam, vitae nam, assumenda aspernatur vel ut rerum officiis impedit excepturi, harum quidem dicta minima atque ullam!</p>
+        </span>
       </section>
       <section x-data="{ open: false }">
         <button @click="open = ! open">bouton 3</button>
+        <span x-show="open" x-transition>
         <p>Consectetur aliquid rerum consequatur sint dolorem voluptate obcaecati quia quasi ipsum repudiandae placeat architecto animi odio eum temporibus ut, praesentium ullam voluptates totam. Ipsum obcaecati maiores omnis nisi eaque sunt.</p>
+        </span>
       </section>
     </div>
   </body>
