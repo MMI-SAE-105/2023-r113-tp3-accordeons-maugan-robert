@@ -12,21 +12,15 @@
     <div class="accordeon" x-data="{ open: 0 }">
       <section>
         <button @click="open = 1">bouton 1</button>
-        <span x-show = "open ===1" x-transition>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum et iusto dolorem molestias, dignissimos minima amet ad, consequuntur commodi debitis ex voluptas itaque accusamus eligendi, laboriosam quis dolor at!</p>
-        </span>
+        <p  x-show = "open ===1" x-transition.scale.origin.left>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum et iusto dolorem molestias, dignissimos minima amet ad, consequuntur commodi debitis ex voluptas itaque accusamus eligendi, laboriosam quis dolor at!</p>
       </section>
       <section>
         <button @click="open = 2">bouton 2</button>
-        <span x-show = "open ===2" x-transition>
-        <p>Voluptate nobis, aliquid distinctio ex adipisci vitae dolores suscipit minus at a exercitationem? Facilis magni vel ratione, amet accusamus suscipit? Perspiciatis distinctio delectus odit tenetur numquam deleniti odio inventore eos.</p>
-        </span>
+        <p x-show = "open ===2" x-transition.scale.origin.left>Voluptate nobis, aliquid distinctio ex adipisci vitae dolores suscipit minus at a exercitationem? Facilis magni vel ratione, amet accusamus suscipit? Perspiciatis distinctio delectus odit tenetur numquam deleniti odio inventore eos.</p>
       </section>
       <section>
         <button @click="open = 3">bouton 3</button>
-        <span x-show = "open ===3" x-transition>
-        <p>Placeat commodi ex optio animi aperiam voluptate eaque ipsum delectus, id aut libero esse dolorem ratione? Sint, necessitatibus? Doloribus fugiat exercitationem fuga consectetur laudantium inventore praesentium? Illo quasi saepe sed?</p>
-        </span>
+        <p x-show = "open ===3" x-transition.scale.origin.left>Placeat commodi ex optio animi aperiam voluptate eaque ipsum delectus, id aut libero esse dolorem ratione? Sint, necessitatibus? Doloribus fugiat exercitationem fuga consectetur laudantium inventore praesentium? Illo quasi saepe sed?</p>
       </section>
     </div>
   </body>
