@@ -57,13 +57,12 @@
       margin-bottom: 0px;
     }
 
-
     </style>
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
-      <li class="actif">
+      <li :class="{actif:isOpen === 1,}">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -72,7 +71,7 @@
           </figcaption>
         </figure>
       </li>
-      <li class>
+      <li :class="{actif:isOpen === 1,}">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
@@ -81,7 +80,7 @@
           </figcaption>
         </figure>
       </li>
-      <li class>
+      <li :class="{actif:isOpen === 1,}">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
