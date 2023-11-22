@@ -7,13 +7,12 @@
     <title>Accordéon horizontal</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
-
-      #accordeon {
+    #accordeon {
      margin: 0;
      padding: 0;
-}
+    }
 
-#accordeon li {
+    #accordeon li {
      width: 107px;
      display: inline-block;
      height: 90px; /* largeur de chaque élément replié */
@@ -24,34 +23,32 @@
      margin: 3px; /* pour espacer les éléments */
      padding: 5px; /* pour espacer le contenu */
      border-radius: 5px; /* pour arrondir les bords */
-}
+    }
 
-#accordeon li.actif {
+    #accordeon li.actif {
      width: 317px;
-}
+    }
 
-#accordeon li figure {
+    #accordeon li figure {
      margin: 0; 
      padding: 0; 
      display: table;
      width: 317px;/* largeur de l'élément intrérieur de 317px (= déplié) */
-}
+    }
 
-#accordeon li figure figcaption {
+    #accordeon li figure figcaption {
      width: 200px; /* largeur du texte */
      padding-left: 10px; /* pour espacer le texte */
     vertical-align: top;
-    display: table-cell; /* pour que les éléments soient alignés verticalement */
-    /* pour que les éléments soient alignés verticalement */
-    /* espace entre les éléments */
-}
+    display: table-cell; /* pour que les éléments soient alignés verticalement *//
+    }
 
-/* Sur tous les enfants de figcation */
-#accordeon li figure figcaption {
+    #accordeon li figure figcaption {
      margin: 0;
      padding: 0;
-}
-ul#accordeon li figure h3 {
+    }
+
+    ul#accordeon li figure h3 {
       margin: 0px;
       height: 2em;
     }
