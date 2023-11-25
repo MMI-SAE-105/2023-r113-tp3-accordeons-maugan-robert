@@ -5,31 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Onglets</h1>
-    <div id="onglets" x-data="{
-      ouvert : 1,
-     }">
-     <ul role="tablist">
-      <li role="tab">Onglet 1</li>
-      <li role="tab">Onglet 2</li>
-      <li role="tab">Onglet 3</li>
-     </ul>
-     <div>
-      <div role="tabpanel" x-show="ouvert === 1">
-        <h1>Panneau 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet mollitia commodi ipsam ducimus qui totam nesciunt, culpa quas ex sapiente perferendis, doloremque quibusdam ad harum voluptatem. Minus, maiores officia!</p>
+    <div id="onglets" x-data="{ouvert:1}">
+      <ul role="tablist">
+        <li role="tab">Onglet 1</li>
+        <li role="tab">Onglet 2</li>
+        <li role="tab">Onglet 3</li>
+      </ul>
+      <div>
+        <div role="tabpanel" x-show="ouvert === 1">
+          <h1>Panneau 1</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempore numquam nobis dignissimos, placeat voluptates commodi quis iure incidunt dolores, repudiandae soluta quidem! Alias, maiores. Porro necessitatibus quae nihil doloribus.</p>
+        </div>
+        <div role="tabpanel" x-show="ouvert === 2">
+          <h1>Panneau 2</h1>
+          <p>Fuga ea laboriosam earum error aliquid doloribus neque, qui numquam dolor, dicta similique autem, fugiat culpa consequatur minima corporis voluptatum consectetur officia voluptatem. In aperiam harum officiis suscipit nihil soluta!</p>
+        </div>
+        <div role="tabpanel" x-show="ouvert === 3">
+          <h1>Panneau 3</h1>
+          <p>Dolores dignissimos explicabo provident reprehenderit? Pariatur minima quo tenetur neque repellat, quisquam sed debitis modi numquam adipisci, quaerat, earum impedit! Alias iste placeat, quidem vel aut repellendus iusto consequatur perferendis?</p>
+        </div>
       </div>
-      <div role="tabpanel" x-show="ouvert === 2">
-        <h1>Panneau 2</h1>
-        <p>Maxime, officia. Asperiores explicabo amet ratione minus veniam suscipit corporis quos necessitatibus temporibus fugiat aut aperiam, quo, nam quibusdam vel? Iste autem eum deleniti amet odit natus sint id suscipit?</p>
-      </div>
-      <div role="tabpanel" x-show="ouvert === 3">
-        <h1>Panneau 3</h1>
-        <p>Nesciunt est minima, eaque, quod quam beatae animi repellendus quo inventore, obcaecati blanditiis placeat perspiciatis hic natus quis? Fugit nulla et iure deserunt alias tempora natus accusamus temporibus harum non!</p>
-      </div>
-     </div>
-     </div>
+    </div>
   </body>
 </html>
