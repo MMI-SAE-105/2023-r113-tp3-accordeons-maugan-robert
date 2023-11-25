@@ -21,25 +21,25 @@
     </style>
   </head>
   <body>
-    <h1>Onglets</h1>
+    <h1>Champions</h1>
     <div id="onglets" x-data="{ouvert:1}">
       <ul role="tablist">
-        <li role="tab" :class="{actif:ouvert === 1,}"><button @click="ouvert=1">Onglet 1</button></li>
-        <li role="tab" :class="{actif:ouvert === 2,}"><button @click="ouvert=2">Onglet 2</button></li>
-        <li role="tab" :class="{actif:ouvert === 3,}"><button @click="ouvert=3">Onglet 3</button></li>
+        <li role="tab" :class="{actif:ouvert === 1,}"><button @click="ouvert=1">Ornn</button></li>
+        <li role="tab" :class="{actif:ouvert === 2,}"><button @click="ouvert=2">Malphite</button></li>
+        <li role="tab" :class="{actif:ouvert === 3,}"><button @click="ouvert=3">Jax</button></li>
       </ul>
       <div class="parentspanneaux">
         <div role="tabpanel" :class="{actif:ouvert === 1,}">
-          <h1>Panneau 1</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempore numquam nobis dignissimos, placeat voluptates commodi quis iure incidunt dolores, repudiandae soluta quidem! Alias, maiores. Porro necessitatibus quae nihil doloribus.</p>
+          <h1>Ornn</h1>
+          <p>Ornn est le demi-dieu de la forge et de l'artisanat à Freljord. Avec comme seule compagne la solitude, il travaille dans sa forge enfouie au plus profond des cavernes de lave de l'Âtre-foyer. C'est là qu'il fond et purifie les métaux nécessaires à la création d'objets de qualité inimitable. Tandis que d'autres divinités, Volibear avant tout, s'immiscent dans les affaires des mortels, Ornn ne sort de son antre que pour remettre ces déités à leur place, avec son fidèle marteau ou les pouvoirs du volcan lui-même.</p>
         </div>
         <div role="tabpanel" :class="{actif:ouvert === 2,}">
-          <h1>Panneau 2</h1>
-          <p>Fuga ea laboriosam earum error aliquid doloribus neque, qui numquam dolor, dicta similique autem, fugiat culpa consequatur minima corporis voluptatum consectetur officia voluptatem. In aperiam harum officiis suscipit nihil soluta!</p>
+          <h1>Malphite</h1>
+          <p>Massive créature de pierre vivante, Malphite lutte pour imposer un ordre sacré dans un monde chaotique. Né pour servir l'obélisque mystique que l'on nomme le Monolithe, il utilisa son incroyable force élémentaire pour protéger son créateur, mais n'y parvint pas. Seul survivant de la destruction qui s'ensuivit, Malphite doit désormais supporter les inconséquences des êtres de chair et trouver un nouveau rôle, digne du dernier survivant de son espèce.</p>
         </div>
         <div role="tabpanel" :class="{actif:ouvert === 3,}">
-          <h1>Panneau 3</h1>
-          <p>Dolores dignissimos explicabo provident reprehenderit? Pariatur minima quo tenetur neque repellat, quisquam sed debitis modi numquam adipisci, quaerat, earum impedit! Alias iste placeat, quidem vel aut repellendus iusto consequatur perferendis?</p>
+          <h1>Jax</h1>
+          <p>Jax, dont nul ne peut égaler l'art du sarcasme et des armements inhabituels, est connu comme le dernier maître d'armes d'Icathia. Après la chute de sa terre natale, ravagée par le Néant qu'elle avait eu l'orgueil de déchaîner, Jax et ses compagnons jurèrent de protéger le peu qu'il en restait. La magie montant de nouveau dans le monde, la menace se fait plus pressante et Jax parcourt Valoran, porteur des dernières lumières d'Icathia. Il éprouve les qualités de tous les guerriers qu'il rencontre pour voir s'ils sont assez puissants pour combattre à ses côtés...</p>
         </div>
       </div>
     </div>
